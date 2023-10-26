@@ -1,0 +1,12 @@
+extends layout
+block content
+ h1 RESULTS.
+    - var x = Math.floor(Math.random() * 10);
+    - var y = Math.floor(Math.random() * 10);
+    - var res1 = Math.atan2  (x);
+    - var res2 = Math.atanh  (y);
+    - var res3 = Math.cbrt (x)
+
+ p Math.atan2 (#{x}) is #{res1}
+ p Math.atanh (#{y}) is #{res2}
+ p Math.cbrt (#{x}) is #{res3}
